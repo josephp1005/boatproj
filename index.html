@@ -22,6 +22,7 @@ body {
   background: white;
 }
 
+/* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
   float: left;
@@ -80,6 +81,14 @@ body {
     margin-right: auto;
 }
 
+.data {
+    width: 75%;
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .vid {
     display: block;
     margin-left: auto;
@@ -104,6 +113,11 @@ body {
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
+        <h2>FINAL VIDEO</h2>
+        <h3>Uncut Length: 24 seconds</h3>
+        <iframe class = "vid" width="560" height="315" src="https://www.youtube.com/embed/Y7INo3vuYFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </div>
+    <div class="card">
       <h2>SISYPHUS NEEDS HELP!</h2>
       <img class = "imgs" src = "sisyphus_boulder.jpeg" > 
       <p>Some text..</p>
@@ -120,7 +134,7 @@ body {
         Mousetrap <br>
         Dominoes <br>
         Marble <br>
-        Plato <br>
+        Play-Doh <br>
         Duct tape <br>
         Electric tape <br>
         Plastic cups <br>
@@ -181,21 +195,17 @@ body {
         <img class = "imgs_working" src = "IMG_1658.JPG" > 
     </div>
     <div class="card">
-        <h2>FINAL VIDEO</h2>
-        <h3>Uncut Length: </h3>
-        <iframe class = "vid" width="560" height="315" src="https://www.youtube.com/embed/Y7INo3vuYFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </div>
-    <div class="card">
         <h2>ANALYSIS OF ENERGY TRANSFERS</h2>
         <h3>Energy Transfer #1: Marble Down PVC Pipe</h3>
         <h4>Video and Description of Step</h4>
         <h4>Derivations</h4>
         <h4>LoggerPro Data</h4>
         <h4>Analysis</h4>
-        <h3>Energy Transfer #2: Pendulum and Plato Stick</h3>
+        <h3>Energy Transfer #2: Pendulum and Play-Doh Stick</h3>
         <h4>Video and Description of Step</h4>
         <p>
-          A marble rolls down a PVC pipe and lands in a cup, which then swings downward in the motion of a pendulum to hit a plato-covered popsicle stick. This collision causes the spring-powered car to be released. 
-          The cup also has a piece of plato inside to facilitate the motion.  
+          A marble rolls down a PVC pipe and lands in a cup, which then swings downward in the motion of a pendulum to hit a Play-Doh-covered popsicle stick. This collision causes the spring-powered car to be released. 
+          The cup also has a piece of Play-Doh inside to facilitate the motion.  
         </p>
         <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/YDsXhiqUWnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h4>Derivations</h4>
@@ -204,7 +214,7 @@ body {
         </p>
         <img class = "imgs_working" src = "pendulum/p1v2.png" > 
         <p>
-          We wanted to first find the cup's maximum velocity before it hits the plato-covered stick. To do so, we needed to calculate the change from potential energy to kinetic energy. 
+          We wanted to first find the cup's maximum velocity before it hits the Play-Doh-covered stick. To do so, we needed to calculate the change from potential energy to kinetic energy. 
           We started by finding the total potential energy before the cup began its motion. 
         </p>
         <img class = "imgs_working" src = "pendulum/p2v2.png" > 
@@ -214,7 +224,7 @@ body {
         </p>
         <img class = "imgs_working" src = "pendulum/p3v2.png" >
         <p>
-          When the cup makes contact with the plato-covered stick, rotational motion is caused. First, we considered the plato-covered stick as a rod to calculate its moment of inertia.
+          When the cup makes contact with the Play-Doh-covered stick, rotational motion is caused. First, we considered the Play-Doh-covered stick as a rod to calculate its moment of inertia.
         </p>
         <img class = "imgs_working" src = "pendulum/p4v2.png" >
         <p>
@@ -222,22 +232,26 @@ body {
         </p>
         <img class = "imgs_working" src = "pendulum/p5v2.png" >
         <p>
-          The collision between the cup and the plato-covered stick is largely elastic. Therefore, the total energy of the cup should equal the rotational kinetic energy of the
-          plato-covered stick. This relationship can be used to find the initial angular and linear velocities of the plato-covered stick. 
+          The collision between the cup and the Play-Doh-covered stick is largely elastic. Therefore, the total energy of the cup should equal the rotational kinetic energy of the
+          Play-Doh-covered stick. This relationship can be used to find the initial angular and linear velocities of the Play-Doh-covered stick. 
         </p>
         <img class = "imgs_working" src = "pendulum/p6v2.png" >
         <h4>Sample Calculations</h4>
         <p>
-          We can verify that the total energy of the pendulum is comparable to the total energy of the falling plato-covered stick by doing a sample calculaton. 
+          We can verify that the total energy of the pendulum is comparable to the total energy of the falling Play-Doh-covered stick by doing a sample calculaton. 
           First, we found the total energy of the pendulum at a particular time. 
         </p>
         <img class = "imgs_working" src = "pendulum/p7v2.png" >
         <p>
-          We then calculated the total energy of the falling plato-covered stick at a certain time. Potential energy is also included in the total energy since the 
+          We then calculated the total energy of the falling Play-Doh-covered stick at a certain time. Potential energy is also included in the total energy since the 
           stick is not straight - the height is based off the contact point with the cup and taken from LoggerPro. 
         </p>
         <img class = "imgs_working" src = "pendulum/p8v2.png" >
         <h4>LoggerPro Data</h4>
+        <p>Data from Pendulum:</p>
+        <img class = "data" src = "pendulum/logger_pro.png" >
+        <p>Data from Play-Doh-covered Stick:</p>
+        <img class = "data" src = "plato_stick/logger_pro.png" >
         <h4>Analysis</h4>
         <h3>Energy Transfer #3: Spring Car Released</h3>
         <h4>Video of Step</h4>
