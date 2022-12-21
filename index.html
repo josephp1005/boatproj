@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background-image: url("greekbg4.jpg");
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  /*background-color: #aaa;*/
+  width: 100%;
+  /*padding: 20px;*/
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.imgs {
+    width: 75%;
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgs_working {
+    width: 35%;
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data {
+    width: 75%;
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.container img {
+  margin: 100px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform:scale(1.25);
+  cursor: zoom-out;
+}
+
+.modal-target {
+  width: 800px;
+  height: auto; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-target:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  opacity: 1 !important;
+  max-width: 1200px;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+/* Add Animation */
+.modal-content, .modal-caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-atransform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*img {
+    transition:transform 0.25s ease;
+}
+
+img:hover {
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+}*/
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Rube Goldberg</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h2>FINAL VIDEO</h2>
+        <h3>Uncut Length: 24 seconds</h3>
+        <iframe class = "vid" width="560" height="315" src="https://www.youtube.com/embed/Y7INo3vuYFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </div>
+    <div class="card">
+      <h2>SISYPHUS NEEDS HELP! - THE STORY</h2>
+      <img class = "imgs" src = "sisyphus_boulder.jpeg" > 
+      <p>
+        In the bleak pits of Tartarus, Sisyphus’ eternal torment has been just short of impossible. 
+        His penance for cheating death seemed cruel but simple: pushing a boulder to the top of a hill. 
+        However, every time he completes this Herculean task, he is greeted with an even more cruel fate: the boulder rolls back down the hill. 
+        Amidst the blood, sweat, and tears of the past 10,000 years, Sisyphus’ only rest occurs on his hour walk back to the bottom. Until today. 
+      </p>
+      <p>
+        The gods of Carney 104 have taken pity on Sisyphus’ poor soul and wish to help carry the boulder. 
+        Unfortunately, Hades, ruler of the underworld, does not take lightly to people directly interfering in his realm. 
+        The solution? Help Sisyphus in secret. 
+        Today, we have built a machine worthy of the gods that only requires the touch of a marble to set Sisyphus free from his eternal tragedy. 
+        The stakes have never been higher. To fail is to subject Sisyphus to a fate more difficult than death. An existence of futility.
+      </p>
+    </div>
+    <div class="card">
+      <h2>MATERIALS</h2>
+      <p>
+        <ul>
+          <li>PVC pipe</li>
+          <li>Hot Wheels track</li>
+          <li>Balloon (with water inside)</li>
+          <li>Skewer</li>
+          <li>String</li>
+          <li>Mousetrap</li>
+          <li>Dominoes</li>
+          <li>Marble</li>
+          <li>Play-Doh</li>
+          <li>Duct tape</li>
+          <li>Electric tape</li>
+          <li>Plastic cups</li>
+          <li>Popsicle sticks</li>
+          <li>Spring car</li>
+          <li>Cardboard</li>
+          <li>Plastic bag</li>
+        </ul>
+    </p>
+    </div>
+    <div class="card">
+        <h2>MEASUREMENTS</h2>
+        <p>
+          <ul>
+            <li>Mass of Sisyphus' boulder: 0.057 kg</li>
+            <li>Mass of spring car: 0.088 kg</li>
+            <li>Mass of 1 cup: 0.007 kg</li>
+            <li>Mass of pendulum cup with Play-Doh: 0.023 kg</li>
+            <li>Mass of Play-Doh-covered stick: 0.034 kg</li>
+            <li>Length of Play-Doh-covered stick: 0.13 m</li>
+          </ul>
+        </p>
+    </div>
+    <div class="card">
+        <h2>INITIAL ENGINEERING DESIGN</h2>
+        <img class = "modal-target" src = "initial_design.png" > 
+    </div>
+    <div class="card">
+        <h2>FINAL ENGINEERING DESIGN</h2>
+        <img class = "modal-target" src = "new design.png" > 
+    </div>
+    <div class="card">
+        <h2>ENGINEERING DESCRIPTION</h2>
+        <h3>Step 1: Marble Down PVC Pipe</h3> 
+        <img class = "imgs_working" src = "step pics/1.png" > 
+        <p>
+          The machine begins with Casey - Sisyphus’ savior - dropping a marble down a PVC pipe. The marble initially has potential energy, which is quickly converted to
+          kinetic energy as it gains speed. The marble then rolls into a cup, beginning the next step. 
+        </p>
+        <h3>Step 2: Pendulum Swings</h3> 
+        <img class = "imgs_working" src = "step pics/2.png" > 
+        <p>
+          Upon receiving the marble, a cup begins its motion in the form of a pendulum. The cup makes contact with a Play-Doh-covered stick, which functions as a stopper for a 
+          spring-loaded car. The cup first has potential energy and gains kinetic energy as it approaches the stopper. 
+        </p>
+        <h3>Step 3: Stopper Knocked Over</h3>
+        <img class = "imgs_working" src = "step pics/3.png" > 
+        <p>
+          After its collision with the cup, torque causes the stopper to have rotational motion as the spring-loaded car is released. The stopper gains rotational kinetic energy and loses potential energy
+          as falls toward the table. The transfer of energy from the pendulum to the stopper to cause the rotation is further documented and analyzed below. 
+        </p> 
+        <h3>Step 4: Spring-loaded Car Released</h3>
+        <img class = "imgs_working" src = "step pics/4.png" > 
+        <p>
+          The spring-loaded car, which was full of potential energy, accelerates quickly as soon as the stopper is out of its way. The potential energy is stored in a spring, which
+          decompresses to propel the car forward. This step is further documnented and anaylzed below.  
+        </p>
+        <h3>Step 5: Dominoes Knocked Over</h3> 
+        <img class = "imgs_working" src = "step pics/5.png" > 
+        <p>
+          The spring-loaded car sets off a series of dominoes. Each domino applies a torque to the subsequent domino. Energy is fully transferred between dominoes because, following a
+          collision, a domino lays flat on the table (height is 0), which means it has no potential energy or rotational kinetic energy. 
+        </p>
+        <h3>Step 6: Mouse Trap Activated</h3>
+        <img class = "imgs_working" src = "step pics/6.png" >
+        <p>
+          The final domino falls into a vertical mouse trap. The trap is activated and causes the water balloon to pop. There was plenty of potential energy in the trap initially, which 
+          is converted to kineic energy. The high speed of the trap's hammer is ideal for popping the water balloon. This step is further documnented and anaylzed below. 
+        </p>
+        <h3>Step 7: Cup Fills Up</h3>
+        <img class = "imgs_working" src = "step pics/7.png" >
+        <p>
+          After the water balloon is popped, water begins flowing into a cup through a funnel. Before the pulley begins moving, the cup needs to gain enough mass to overcome the tension force.
+          The increase in mass corresponds to an increase in the potential energy of the cup.
+        </p> 
+        <h3>Step 8: Pulley Saves Sisyphus</h3>
+        <img class = "imgs_working" src = "step pics/8.png" >
+        <p>
+          Once the cup has filled up, it starts to lose potential energy and gain kinetic energy due to gravity as it falls to the ground. At the same time, the boulder gains 
+          translational kinetic energy, rotational kinetic energy, and potential energy while it goes up Sisyphus' enormous hill: the Hot Wheels track. This step as well as the previous
+          one are further documented and analyzed below. 
+        </p> 
+    </div>
+    <div class="card">
+        <h2>BUILDING THE MACHINE - FAILURES AND SUCCESSES</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+        <h2>PHOTOS OF WORKING</h2>
+        <img class = "imgs_working" src = "IMG_0086.JPG" > 
+        <br>
+        <img class = "imgs_working" src = "IMG_0096.JPG" > 
+        <br>
+        <img class = "imgs_working" src = "IMG_1658.JPG" > 
+    </div>
+    <div class="card">
+        <h2>ANALYSIS OF ENERGY TRANSFERS</h2>
+        <h3>Energy Transfer #1: Marble Down PVC Pipe</h3>
+        <h4>Video and Description of Step</h4>
+        <h4>Derivations</h4>
+        <h4>LoggerPro Data</h4>
+        <h4>Analysis</h4>
+        <h3>Energy Transfer #2 (Steps 2 and 3): Pendulum and Play-Doh Stick</h3>
+        <h4>Video and Description of Step</h4>
+        <p>
+          A marble rolls down a PVC pipe and lands in a cup, which then swings downward in the motion of a pendulum to hit a Play-Doh-covered popsicle stick. This collision causes the spring-powered car to be released. 
+          The cup also has a piece of Play-Doh inside to facilitate the motion. Help for Sisyphus is on the way!
+        </p>
+        <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/YDsXhiqUWnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4>Derivations</h4>
+        <p>
+          LoggerPro provides the components of velocity, so we can find the overall magnitude by using the Pythagorean theorem, as shown below. A new column in LoggerPro was created to show the total velocity so we could confirm the math we did.
+        </p>
+        <img class = "imgs_working" src = "pendulum/p1v2.png" > 
+        <p>
+          We wanted to first find the cup's maximum velocity before it hits the Play-Doh-covered stick. To do so, we needed to calculate the change from potential energy to kinetic energy. 
+          We started by finding the total potential energy before the cup began its motion. 
+        </p>
+        <img class = "imgs_working" src = "pendulum/p2v2.png" > 
+        <p>
+          We can use the maximum potential energy to find the cup's maximum velocity at its lowest point. Since the cup is not completely at the ground when it reaches
+          max velocity, it also has some potential energy at the lowest point. 
+        </p>
+        <img class = "imgs_working" src = "pendulum/p3v2.png" >
+        <p>
+          When the cup makes contact with the Play-Doh-covered stick, rotational motion is caused. First, we considered the Play-Doh-covered stick as a rod to calculate its moment of inertia.
+        </p>
+        <img class = "imgs_working" src = "pendulum/p4v2.png" >
+        <p>
+          Next, we can use the final velocity and height of the cup from LoggerPro to calculate its total energy at the end. 
+        </p>
+        <img class = "imgs_working" src = "pendulum/p5v2.png" >
+        <p>
+          The collision between the cup and the Play-Doh-covered stick is largely elastic. Therefore, the total energy of the cup should equal the total energy of the
+          Play-Doh-covered stick - both rotational kinetic energy and potential energy. This relationship can be used to find the angular and linear velocities of the Play-Doh-covered stick. 
+        </p>
+        <img class = "imgs_working" src = "pendulum/p6v2.png" >
+        <h4>Sample Calculations</h4>
+        <p>
+          We can verify that the total energy of the pendulum is comparable to the total energy of the falling Play-Doh-covered stick by doing a sample calculaton. 
+          First, we found the total energy of the pendulum at a particular time. 
+        </p>
+        <img class = "imgs_working" src = "pendulum/p7v2.png" >
+        <p>
+          We then calculated the total energy of the falling Play-Doh-covered stick at a certain time. Both rotational kinetic energy and potential energy are included in the total 
+          energy. 
+        </p>
+        <img class = "imgs_working" src = "pendulum/p8v2.png" >
+        <p>
+          Using the derivation above, we predicted the velocity at this same time (1.375 seconds). 
+        </p>
+        <img class = "imgs_working" src = "pendulum/p9v2.png" >
+        <h4>LoggerPro Data</h4>
+        <p>Data from Pendulum:</p>
+        <img class = "modal-target" src = "pendulum/logger_pro.png" >
+        <p style="text-align:center">*Note: A cosine fit is used for the y position of the cup since its motion should be comparable to simple harmonic motion.</p>
+        <p>Data from Play-Doh-covered Stick:</p>
+        <input type="checkbox" id="zoomCheck4">
+        <img class = "modal-target" src = "plato_stick/logger_pro.png" >
+        <h4>Analysis</h4>
+        <p>
+          First, our calculation for the maximum velocity was 1.082 meters per second, but, based on LoggerPro, the maximum velocity was only around
+          0.783 meters per second. Since the theoretical velocity was higher, it is likely that friction in the pendulum caused a loss of energy. Moreover, the
+          height of the cup at maximum kinetic energy was retrieved from LoggerPro, which means there could be slight error due to the position of the origin in 
+          the video analysis. This height was necessary since the cup still had some potential energy when it reached maximum kinetic energy. 
+        </p>
+        <p>
+          Next, our derivation for the moment of inertia of the Play-Doh-covered stick is slightly inaccurate since we considered it to be a rod. While the stick is clearly bottom heavy due
+          to the Play-Doh, we do not know the exact distribution of mass. Therefore, interpreting the stick as a rod was our best option. 
+        </p>
+        <p>
+          Although we considered the collision to be perfectly ellastic in our derivation for the velocity of the Play-Doh-covered stick, energy was likely lost due to heat or sound. 
+          Thus, we expected our predicted values for velocity to be slightly higher than they should be. 
+        </p>
+        <p>
+          Before doing a sample calculation for the velocity, we wanted to confirm that the overall energy was largely similar for the motion of the pendulum and the stick. We picked two
+          random points in the respective motions and found that the total energy was extremely similar - there was only a 0.0003 J difference. This shows that the collision, while not perfectly
+          elastic, follows the basic principles of the conservation of energy. 
+        </p>
+        <p>
+          Finally, we used our derivation to calculate the velocity of the stick at a particular time. As expected, our predicted velocity, 0.832 meters per second, was slightly
+          larger, specifically 0.528 meters per second greater than the actual velocity from LoggerPro. The diference reflects loss of energy, which can be attributed to heat and friction
+          when the cup and stick collided. 
+        </p>
+        <p>
+          Overall, this energy transfer reflects the fundamental concepts of conservation of energy, simple harmonic motion, and rotational motion. Of course, our calculations had 
+          some innacuracy due to factors not fully in our control. Most importantly, though, Sisyphus was one step closer to freedom! 
+        </p>
+        <h3>Energy Transfer #3: Spring Car Released</h3>
+        <h4>Video of Step</h4>
+        <h4>Derivations</h4>
+        <h4>LoggerPro Data</h4>
+        <h4>Analysis</h4>
+        <h3>Energy Transfer #4: Mouse Trap Activated</h3>
+        <h4>Video of Step</h4>
+        <h4>Derivations</h4>
+        <h4>LoggerPro Data</h4>
+        <h4>Analysis</h4>
+        <h3>Energy Transfer #5 (Steps 7 and 8): Pulley System</h3>
+        <h4>Video of Step</h4>
+        <iframe width="560" height="315" class="vid" src="https://www.youtube.com/embed/WRvnsTVnNcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4>Derivations, LoggerPro Data, and Analysis</h4>
+        <img class = "modal-target" src = "pulley/image1.jpg" >
+        <p>
+          The final push! In this final energy transfer, Sisyphus’ boulder finally makes it up the mountain. After the pop of the water balloon, the cup begins to fill with water. As the force of gravity overcomes the tension force in the string, it begins to fall. The string is attached via a non-ideal pulley to the boulder, which is allowed to roll up the hot wheel track mountain.
+          As the cup falls, it gains mass but also loses height. This should create a quadratic curve for the PE of the cup. In addition, it also gains kinetic energy as gravity accelerates it down. However, this problem becomes involved when we take the boulder into account. Some of the energy of the cup falling is transferred via tension to the boulder, which gains PE, KE translational, and KE rotational. This is modeled below via the logger pro data collected above:
+        </p>
+        <img class = "modal-target" src = "pulley/image2.jpg" >
+        <p>
+          As can be seen in the graph, the Cup’s total energy decreases from initial to final while the energy of the boulder increases from initial to final. This is because the act of pulling up the boulder decreases the final velocity of the cup, thus decreasing its total final energy. 
+          In return, the boulder will increase in energy as the work from tension is acting upon it. Here are the derivations:
+        </p>
+        <img class = "data" src = "pulley/image3.jpg" >
+        <p>
+          As you can see from these derivations, the energy lost from the cup closely resembles the energy gained from the boulder, with a difference of 0.002J. 
+          This suggests that very little energy is lost across the entire system, as the play doh boulder allows it to roll up the ramp without slipping while also not providing any non-conservational work. 
+        </p>
+        <h4>Sample Calculations</h4>
+        <img class = "data" src = "pulley/image5.jpg" >
+        <h4>Sample Calculation LoggerPro Verification</h4>
+        <img class = "modal-target" src = "pulley/image4.jpg" >
+    </div>
+    <div class="card">
+        <h2>CONCLUSION</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Authors</h2>
+      <p>Casey Chen, Sonny Lowe, and Joseph Thomas</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div id="modal" class="modal">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <img id="modal-content" class="modal-content">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+<script>
+  // Modal Setup
+  var modal = document.getElementById('modal');
+
+  var modalClose = document.getElementById('modal-close');
+  modalClose.addEventListener('click', function() { 
+    modal.style.display = "none";
+  });
+
+  // global handler
+  document.addEventListener('click', function (e) { 
+    if (e.target.className.indexOf('modal-target') !== -1) {
+        var img = e.target;
+        var modalImg = document.getElementById("modal-content");
+        var captionText = document.getElementById("modal-caption");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+    }
+  });
+
+</script>
+
+</body>
+</html>
