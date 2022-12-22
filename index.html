@@ -217,7 +217,7 @@ img:hover {
 <body>
 
 <div class="header">
-  <h2>Rube Goldberg: Myth of Sisyphus</h2>
+  <h2 id = "top">Rube Goldberg: Myth of Sisyphus</h2>
 </div>
 
 <div class="row">
@@ -497,13 +497,88 @@ img:hover {
         <img class = "imgs_working" src = "IMG_1658.JPG" > 
     </div>
     <div class="card">
-        <h2 id = "energy1">Analysis - Energy Transfer #1 (Steps 2 and 3): Pendulum and Play-Doh Stick</h2>
+      <h2 id = "energy1">Analysis - Energy Transfer #1 (Step 1): Marble Down PVC Pipe</h2>
+      <h4>Video and Description of Step</h4>
+      <p>
+        This was the initiating step of the Rube Goldberg machine, with the marble manually placed in PVC pipe with potential energy converting to kinetic energy as it rolls down the length of the pipe. This conversion to kinetic energy gives the marble a velocity, and thus an impulsive force that applies a torque upon the pendulum. Due to the opaque nature of the pipe, we calculated the final kinetic energy of the marble through a linearization of two frames where we see the marble within the frame. This method of finding the final kinetic energy could not discern the exact instantaneous velocity, but with a ∆t equal to ⅓ of a second, the calculated rate of change was as close to instantaneous as we could arrive at.
+      </p>
+      <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/Gx7Ww6cI2Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h4>Free Body Diagrams</h4>
+      <img class = "modal-target" src = "pvc/marble_fbd.png" > 
+      <h4>Derivations</h4>
+      <p>Conservation of Energy:</p>
+      <p style="text-align:center"><strong>∑E = U<sub>i</sub> + K<sub>i</sub> = U<sub>f</sub> + K<sub>f</sub></strong></p>
+      <p>Since the marble is not moving initially, Ki = 0, and because uncut shot of the Rube Goldberg has the marble hit the cup in the pendulum at the bottom of the PVC pipe, we are treating that as the y=0 of calculations for this energy transfer. Therefore, at the final time, potential energy is zero:</p>
+      <p style="text-align:center">
+        <strong>
+          U<sub>i</sub> = K<sub>f</sub> <br>
+          mgh = ½ mv<sup>2</sup>
+        </strong>
+      </p>
+      <p>However, there will also be some energy lost due to friction. So:</p>
+      <strong>
+      <p style="text-align:center"><strong>∑E = U<sub>i</sub> + K<sub>i</sub> = U<sub>f</sub> + K<sub>f</sub> + W<sub>non-conserve</strong></sub> </p>
+      </strong>
+      <p>Amended, the equation is:</p>
+      <p style="text-align:center"><strong>U<sub>i</sub> = K<sub>f</sub> + W<sub>non-conserve</sub></strong></p>
+      <p>Here the work is done by friction, which can be calculated by:</p>
+      <strong>
+      <p style="text-align:center">
+        W<sub>friction</sub> = µF<sub>normal</sub> * d
+      </p>
+      </strong>
+      <p>Calculations for Key Values:</p>
+      <strong>
+      <p style="text-align:center">
+        Weighed mass of marble = 0.00595 kg <br>
+        U<sub>i</sub> = mgh = 0.00595*9.81*0.3147 = 0.0184 J
+      </p>
+      <p style="text-align:center">
+        Approximate velocity = 2.358 meters per second
+        <br> 
+        K<sub>f</sub> = ½mv<sup>2</sup> = ½(2.358<sup>2</sup>)*0.00595 = 0.0165 J
+      </p>
+      </strong>
+      <p>
+        As we can see, the initial potential energy and final kinetic energy are quite close in magnitude, demonstrating an expected transfer of energy from potential to kinetic. However, the slight loss is due to friction. As can be seen in the free body diagram, the friction force allowing the marble to rotate is conservational and does not affect the loss of energy. However, because the materials do not offer much traction, slipping is likely to occur. This would be a non conservational force that would explain the loss of energy.
+      </p>
+      
+
+      <p style="text-align:center"><strong>Using the equation we found before: U<sub>i</sub> = K<sub>f</sub> + W<sub>non-conserve</sub></strong></p>
+      <strong>
+      <p style="text-align:center">W<sub>friction</sub> = 0.0184 J - 0.0165 J = 0.0019 J</p>
+      </strong>
+      <p style="text-align:center">The angle of the incline can be found using the arcsine function, where the opposite equals the vertical height, 0.3147m, and the hypotenuse is the length of the PVC, 0.7602m. This enables us to calculate the normal force.</p>
+      <strong>
+      <p style="text-align:center">θ = arcsin(0.3147/0.762) = 0.426 radians = 24.39º</p>
+      <p style="text-align:center">F<sub>normal</sub> = mgcos(24.39º) <br>
+         = 0.00595*9.81*cos(24.39º)
+         = 0.0532 N
+      </p>
+      <p style="text-align:center">
+        W<sub>friction</sub> = µF<sub>normal</sub> * d
+      </p>
+      <p style="text-align:center">
+        0.0019 = µ(0.0532 N)*(0.7602) <br>
+        µ = 0.047
+      </p>
+      </strong>
+      <h4>Sample Calculations</h4>
+      <img class = "modal-target" src = "pvc/sample_calc.png" >
+      <h4>LoggerPro Data</h4>
+      <img class = "modal-target" src = "pvc/image1.png" > 
+    </div>
+    <div class="card">
+        <h2 id = "energy2">Analysis - Energy Transfer #2 (Steps 2 and 3): Pendulum and Play-Doh Stick</h2>
         <h4>Video and Description of Step</h4>
         <p>
           A marble rolls down a PVC pipe and lands in a cup, which then swings downward in the motion of a pendulum to hit a Play-Doh-covered popsicle stick. This collision causes the spring-powered car to be released. 
           The cup also has a piece of Play-Doh inside to facilitate the motion. Help for Sisyphus is on the way!
         </p>
         <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/YDsXhiqUWnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4>Free Body Diagrams</h4>
+        <img class = "modal-target" src = "pendulum/fbd_pendulum.png" > 
+        <img class = "modal-target" src = "plato_stick/fbd_plato.png" > 
         <h4>Derivations</h4>
         <p>
           LoggerPro provides the components of velocity, so we can find the overall magnitude by using the Pythagorean theorem, as shown below. A new column in LoggerPro was created to show the total velocity so we could confirm the math we did.
@@ -585,13 +660,18 @@ img:hover {
         </p>
     </div>
     <div class = "card">
-      <h2 id = "energy2">
-        Analysis - Energy Transfer #2 (Step 4): Spring Car Released
+      <h2 id = "energy3">
+        Analysis - Energy Transfer #3 (Step 4): Spring Car Released
       </h2>
       <h4>Video and Description of Step</h4>
       <p>
        A Play-Doh rod is initially obstructing the movement of a wound spring car. Upon the collision between the pendulum and rod, displacing the stopper, the car begins to travel forward, converting the potential energy of the spring to kinetic energy. This energy is then transferred to the dominos. In order to set up this stage of the Rube Goldberg machine, we loaded the spring by rolling the car back 25cm, the distance to the cardboard that set off the dominos. Data was then collected for the movement of the spring car. 
       </p>
+      <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/j_0XrPkY600" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <h4>Free Body Diagrams</h4>
+      <img class = "modal-target" src = "car/car_fbd.png" > 
+
       <h4>Derivations</h4>
       <p>
         We can find the work done by the spring within the car by utilizing the Work-Energy Theorem, understanding that the change in kinetic energy is equal to the work done.
@@ -605,38 +685,37 @@ img:hover {
         Spring Constant Calculation:
       </p>
       <img class = "imgs_working" src = "car/k_calc.png" >
+      <h4>Sample Calculations</h4>
+      <img class = "imgs_working" src = "car/sample_calc.png" >
+      <p>
+        As we can see, our derived value of k was successful. When used at various time points, the Work-Energy Theorem is upheld. The work done by the spring is equivalent to the change in kinetic energy. This demonstrates the conversion of the stored spring potential energy into kinetic energy which would transfer to the dominos.
+      </p>
       <h4>LoggerPro Data</h4>
-      <img class = "imgs_working" src = "car/image1.png" >
+      <img class = "imgs_working  " src = "car/image1.png" >
       <img class = "modal-target" src = "car/image3.png" >
-      <h3>Energy Transfer #3: Mouse Trap Activated</h3>
-      <h4>Video of Step</h4>
-      <h4>Derivations</h4>
-      <h4>LoggerPro Data</h4>
-      <h4>Analysis</h4>
 
     </div> 
 
     <div class = "card">
-      <h2 id = "energy3">
-        Analysis - Energy Transfer #3 (Step 6): Mousetrap Activated 
+      <h2 id = "energy4">
+        Analysis - Energy Transfer #4 (Step 6): Mousetrap Activated 
       </h2>
       <h4>Video of Step</h4>
-      <h4>Derivations</h4>
-      <h4>LoggerPro Data</h4>
-      <h4>Analysis</h4>
-      <h3>Energy Transfer #3: Mouse Trap Activated</h3>
-      <h4>Video of Step</h4>
-      <h4>Derivations</h4>
-      <h4>LoggerPro Data</h4>
-      <h4>Analysis</h4>
+      <p>
 
+      </p>
+      <h4>Derivations</h4>
+      <h4>Free Body Diagrams</h4>
+      <img class = "modal-target" src = "trap/trap_fbd.png" > 
+      <h4>LoggerPro Data</h4>
+      <h4>Analysis</h4>
     </div> 
 
     <div class="card">
-      <h2 id = "energy4">Analysis - Energy Transfer #4 (Steps 7 and 8): Pulley System</h2>
+      <h2 id = "energy5">Analysis - Energy Transfer #5 (Steps 7 and 8): Pulley System</h2>
       <h4>Video of Step</h4>
       <iframe width="560" height="315" class="vid" src="https://www.youtube.com/embed/WRvnsTVnNcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h4>Derivations, LoggerPro Data, and Analysis</h4>
+      <h4>Free Body Diagrams, Derivations, LoggerPro Data, and Analysis</h4>
       <img class = "modal-target" src = "pulley/image1.jpg" >
       <p>
         The final push! In this final energy transfer, Sisyphus’ boulder finally makes it up the mountain. After the pop of the water balloon, the cup begins to fill with water. As the force of gravity overcomes the tension force in the string, it begins to fall. The string is attached via a non-ideal pulley to the boulder, which is allowed to roll up the hot wheel track mountain.
@@ -658,7 +737,7 @@ img:hover {
       <img class = "modal-target" src = "pulley/image4.jpg" >
     </div>
     <div class="card">
-        <h2>CONCLUSION</h2>
+        <h2 id="concl">CONCLUSION</h2>
         <p>
           In conclusion, with Casey’s help, Sonny’s thirst for water was quenched and Sisyphus (Joseph secretly) was able to have a moment of rest from his eternal punishment. The lives you can change with a marble are simply limitless. 
           Through this task, we have learned the power of energy as it transfers between its different forms. From gravitational and elastic potential energy to translational and rotational kinetic energy, they all correspond with one another. We have learned that energy always has a source, and never appears from nowhere. Whether this be the initial human work or the transfer between our DIY steps, energy is in a never ending chain reaction occurring all around us in every moment. 
@@ -666,7 +745,7 @@ img:hover {
           In each of our analyses, data collections, derivations, building successes, and inevitable failures (it took 24 attempts before the first complete run), we have gained invaluable experiences and countless memories. Perhaps it was just one small step for our group, but it was one giant leap for our physics understanding.
 
         </p>
-        <img class = "imgs_working" src = "end_meme.jpg" >
+        <img class = "imgs_working" src = "big_leap.jpeg" >
     </div>
   </div>
   <div class="rightcolumn">
@@ -718,17 +797,31 @@ img:hover {
       <p>
         <a href="#energy4">Energy Transfer #4</a>
       </p>
+      <p>
+        <a href="#energy5">Energy Transfer #5</a>
+      </p>
+      <p>
+        <a href="#concl">Conclusion</a>
+      </p>
+    </div>
+    <div class="card">
+      <h2>Did you know...</h2>
+      <p>
+        This website was coded from scratch in HTML, CSS, and JavaScript!
+      </p>
     </div>
   </div>
+
   <div id="modal" class="modal">
     <span id="modal-close" class="modal-close">&times;</span>
     <img id="modal-content" class="modal-content">
     <div id="modal-caption" class="modal-caption"></div>
   </div>
 </div>
-
 <div class="footer">
-  <h2>Footer</h2>
+  <a href = "#top">
+    <h2>Back to Top</h2>
+  </a>
 </div>
 
 <script>
