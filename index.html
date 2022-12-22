@@ -9,17 +9,24 @@
 
 /* Add a gray background color with some padding */
 body {
+  position: relative;
   font-family: Arial;
+  margin: 0px;
   padding: 20px;
-  background-image: url("greekbg4.jpg");
+  padding-left: 12vw;
+  padding-right: 12vw;
+  background-image: url("greekbg5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color:  rgb(255, 215, 196); */
 }
 
 /* Header/Blog Title */
 .header {
   padding: 30px;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  background: white;
+  /* background: white; */
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -46,8 +53,9 @@ body {
 /* Add a card effect for articles */
 .card {
    background-color: white;
-   padding: 20px;
+   padding: 30px;
    margin-top: 20px;
+   border-radius: 10px;
 }
 
 /* Clear floats after the columns */
@@ -213,17 +221,57 @@ img:hover {
     width: 100%;
     padding: 0;
   }
+
+  #left-pillar{
+    display: none;
+  }
+
+  #right-pillar{
+    display: none;
+  }
 }
+
+#pillar{
+  position: fixed;
+  width: 100vw;
+  top:0;
+  left:0;
+}
+
+#left-pillar{
+  position: fixed;
+  left: -5vw;
+  height:100vh;
+  width:auto;
+}
+
+#right-pillar{
+  position: fixed;
+  right: -5vw;
+  height:100vh;
+  width:auto;
+}
+
 </style>
 </head>
 <body>
 
+<div id="pillar">
+  <img id="left-pillar" src="Pillars.png">
+  <img id="right-pillar" src="Pillars.png">
+</div>
+
 <div class="header">
-  <h2 id = "top">Rube Goldberg: Myth of Sisyphus</h2>
+  <h2 id = "top">Rube Goldberg 2022: Myth of Sisyphus</h2>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
+    <div class="card">
+      <!-- <h2 id = "welcome">Welcome!</h2> -->
+      <p>Welcome to our Rube Goldberg website! Join Sisyphus as we explore the toils and struggles he and his physics saviors encountered throughout this journey.</p>
+      <p>Click on images to enlarge them, watch the embedded videos, and use our table of contents for easy navigation!</p>
+  </div>
     <div class="card">
         <h2 id = "final_video">FINAL VIDEO</h2>
         <h3>Uncut Length: 24 seconds</h3>
@@ -231,7 +279,7 @@ img:hover {
     </div>
     <div class="card">
       <h2 id = "story">SISYPHUS NEEDS HELP! - THE STORY</h2>
-      <img class = "imgs" src = "sisyphus_boulder.jpeg" > 
+      <img class = "imgs modal-target" src = "sisyphus_boulder.jpeg" > 
       <p>
         In the bleak pits of Tartarus, Sisyphus’ eternal torment has been just short of impossible. 
         His penance for cheating death seemed cruel but simple: pushing a boulder to the top of a hill. 
@@ -299,42 +347,42 @@ img:hover {
     <div class="card">
         <h2 id = "eng_desc">ENGINEERING DESCRIPTION</h2>
         <h3>Step 1 (Analyzed): Marble Down PVC Pipe</h3> 
-        <img class = "imgs_working" src = "step pics/1.png" > 
+        <img class = "imgs_working modal-target" src = "step pics/1.png" > 
         <p>
           The machine begins with Casey - Sisyphus’ savior - dropping a marble down a PVC pipe. The marble initially has potential energy, which is quickly converted to kinetic energy as it gains speed. The marble then rolls into a cup, beginning the next step.
         </p>
         <h3>Step 2 (Analyzed): Pendulum Swings</h3> 
-        <img class = "imgs_working" src = "step pics/2.png" > 
+        <img class = "imgs_working modal-target" src = "step pics/2.png" > 
         <p>
           Upon receiving the marble in an inelastic collision, the cup begins its motion in the form of a pendulum. The cup makes contact with a Play-Doh-covered stick, which functions as a stopper for a spring-loaded car. The cup first has potential energy and gains kinetic energy as it approaches the lowest point. Then it oscillates back and forth in simple harmonic motion after being dampened from the collision.
         </p>
         <h3>Step 3 (Analyzed): Stopper Knocked Over</h3>
-        <img class = "imgs_working" src = "step pics/3.png" > 
+        <img class = "imgs_working modal-target" src = "step pics/3.png" > 
         <p>
           After the pendulum collides with the cup, the impact torque force causes the stopper to have rotational motion as it topples over. This releases the spring-loaded car as the friction force that initially held the car back is no longer present. The stopper gains rotational kinetic energy and loses potential energy as falls toward the table.
         </p> 
         <h3>Step 4 (Analyzed): Spring-loaded Car Released</h3>
-        <img class = "imgs_working" src = "step pics/4.png" > 
+        <img class = "imgs_working modal-target" src = "step pics/4.png" > 
         <p>
           The spring-loaded car, which was full of elastic potential energy, accelerates quickly as soon as the stopper is out of its way. The potential energy is stored in a spring, which decompresses to propel the car forward.
         </p>
         <h3>Step 5: Dominoes Knocked Over</h3> 
-        <img class = "imgs_working" src = "step pics/5.png" > 
+        <img class = "imgs_working modal-target" src = "step pics/5.png" > 
         <p>
           The spring-loaded car sets off a series of dominoes. Each domino applies a torque to the subsequent domino. Energy is fully transferred between dominoes because, following a collision, a domino lays flat on the table (height is 0), which means it has no potential energy. The rotational kinetic energy gained is used to knock over the next domino. This chain reaction continues to the next step.
         </p>
         <h3>Step 6 (Analyzed): Mouse Trap Activated</h3>
-        <img class = "imgs_working" src = "step pics/6.png" >
+        <img class = "imgs_working modal-target" src = "step pics/6.png" >
         <p>
           The final domino falls into a vertical mouse trap. As the PE transforms into KE while the domino gains speed, its impact force overcomes the friction force of the mechanism holding the set trap. The trap is then activated. The elastic potential energy in the trap is converted into rotational kinetic energy. Finally, the arm slams into the water balloon, with enough energy and force to overcome the balloon’s material elasticity, thus popping it.
         </p>
         <h3>Step 7 (Analyzed): Cup Fills Up</h3>
-        <img class = "imgs_working" src = "step pics/7.png" >
+        <img class = "imgs_working modal-target" src = "step pics/7.png" >
         <p>
           After the water balloon is popped, water begins flowing into a cup through a funnel. Through controlling the flow of water, the mass of the cup increases at a constant rate. Before the pulley begins moving, the cup needs to gain enough mass to overcome the tension force of the rope. The tension force is opposed by the gravitational force of the boulder along the incline and the small friction force.
         </p> 
         <h3>Step 8 (Analyzed): Pulley Saves Sisyphus</h3>
-        <img class = "imgs_working" src = "step pics/8.png" >
+        <img class = "imgs_working modal-target" src = "step pics/8.png" >
         <p>
           Once the cup has filled up, its potential energy is gained and lost as its mass increases but height decreases. This quadratic relationship is modeled below. At the same time, the boulder gains translational kinetic energy, rotational kinetic energy, and potential energy while it goes up Sisyphus' enormous mountain: the Hot Wheels track. Through a friction force that supplies torque, the boulder is able to roll up without slipping, thus retaining the conservation of energy.
         </p> 
@@ -372,7 +420,7 @@ img:hover {
           As a result, the pulley was kept sturdy and the string shifted fewer times. 
         </p> 
 
-        <img class = "imgs_working" src = "pulley/IMG_1671.jpg" >
+        <img class = "imgs_working modal-target" src = "pulley/IMG_1671.jpg" >
         <p style="text-align:center">
           Without the popsicle sticks keeping the axle sturdy, the string shown above would easily move from side to side, disrupting
           the rotation of the pulley.
@@ -399,7 +447,7 @@ img:hover {
           The speed of the marble was still sufficient to separate the cup from the PVC pipe and begin the pendulum motion. 
         </p>
 
-        <img class = "imgs_working" src = "pendulum/plato_cup.png" >
+        <img class = "imgs_working modal-target" src = "pendulum/plato_cup.png" >
         <p style="text-align:center">
           The Play-Doh shown above in the cup was key to achieve the mass necessary to tip over the stick in a collision. 
         </p>
@@ -417,11 +465,11 @@ img:hover {
           This approach was effective, and we kept it for the final product <strong>(success 3)</strong>.  
         </p>
 
-        <img class = "imgs_working" src = "plato_stick/2.jpg" >
+        <img class = "imgs_working modal-target" src = "plato_stick/2.jpg" >
         <p style="text-align:center">
           Old stopper
         </p>
-        <img class = "imgs_working" src = "plato_stick/1.PNG" >
+        <img class = "imgs_working modal-target" src = "plato_stick/1.PNG" >
         <p style="text-align:center">
           Improved stopper (after it's been knocked over)
         </p>
@@ -455,7 +503,7 @@ img:hover {
           The final domino did not have to land in a very specific location anymore since making contact with any part of the popsicle stick was sufficient to set off the mousetrap. 
         </p>
 
-        <img class = "imgs_working" src = "trap/IMG_1674.jpg" >
+        <img class = "imgs_working modal-target" src = "trap/IMG_1674.jpg" >
         <p style="text-align:center">Picture of mousetrap with extension for trip mechanism and sharp part of skewer for the hammer (on the left)</p>
 
         <h3>Phase #6: Getting Water into Cup</h3>
@@ -471,7 +519,7 @@ img:hover {
           Instead of swinging inward, the cup was kept largely straight and right underneath the funnel, reducing errors in our trials.  
         </p>
 
-        <img class = "imgs_working" src = "pulley/trick.JPG" >
+        <img class = "imgs_working modal-target" src = "pulley/trick.JPG" >
         <p style="text-align:center">Picture of contraption that kept the cup straight</p>
 
         <h3>Phase #7: Getting Boulder to Roll</h3>
@@ -487,17 +535,17 @@ img:hover {
           The boulder began to rotate about its axis due to the torque caused by friction. 
         </p>
 
-        <img class = "imgs_working" src = "pulley/straw.png" >
+        <img class = "imgs_working modal-target" src = "pulley/straw.png" >
         <p style="text-align:center">Picture of boulder with straw that acts as axis of rotation</p>
     </div>
     <div class="card">
         <h2 id = "photos">PHOTOS OF WORKING</h2>
         <h3>Here are some photos of us hard at work as we got closer and closer to saving Sisyphus!</h3>
-        <img class = "imgs_working" src = "IMG_0086.JPG" > 
+        <img class = "imgs_working modal-target" src = "IMG_0086.JPG" > 
         <br>
-        <img class = "imgs_working" src = "IMG_0096.JPG" > 
+        <img class = "imgs_working modal-target" src = "IMG_0096.JPG" > 
         <br>
-        <img class = "imgs_working" src = "IMG_1658.JPG" > 
+        <img class = "imgs_working modal-target" src = "IMG_1658.JPG" > 
     </div>
     <div class="card">
       <h2 id = "energy1">Analysis - Energy Transfer #1 (Step 1): Marble Down PVC Pipe</h2>
@@ -783,7 +831,7 @@ img:hover {
   <div class="rightcolumn">
     <div class="card">
       <h2>Authors</h2>
-      <p>Casey Chen, Sonny Lowe, and Joseph Thomas</p>
+      <p>Joseph Thomas, Sonny Lowe, and Casey Chen</p>
     </div>
     <div class="card">
       <h2>Table of Contents</h2>
