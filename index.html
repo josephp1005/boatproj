@@ -492,6 +492,7 @@ img:hover {
     </div>
     <div class="card">
         <h2 id = "photos">PHOTOS OF WORKING</h2>
+        <h3>Here are some photos of us hard at work as we got closer and closer to saving Sisyphus!</h3>
         <img class = "imgs_working" src = "IMG_0086.JPG" > 
         <br>
         <img class = "imgs_working" src = "IMG_0096.JPG" > 
@@ -502,73 +503,47 @@ img:hover {
       <h2 id = "energy1">Analysis - Energy Transfer #1 (Step 1): Marble Down PVC Pipe</h2>
       <h4>Video and Description of Step</h4>
       <p>
-        This was the initiating step of the Rube Goldberg machine, with the marble manually placed in PVC pipe with potential energy converting to kinetic energy as it rolls down the length of the pipe. This conversion to kinetic energy gives the marble a velocity, and thus an impulsive force that applies a torque upon the pendulum. Due to the opaque nature of the pipe, we calculated the final kinetic energy of the marble through a linearization of two frames where we see the marble within the frame. This method of finding the final kinetic energy could not discern the exact instantaneous velocity, but with a ∆t equal to ⅓ of a second, the calculated rate of change was as close to instantaneous as we could arrive at.
+        This was the initiating step of the Rube Goldberg machine, with the marble manually placed in PVC pipe with potential energy converting to kinetic energy as it rolls down the length of the pipe. This conversion to kinetic energy gives the marble a velocity, and thus an impulsive force that applies a torque upon the pendulum. 
       </p>
-      <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/Gx7Ww6cI2Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="vid" src="https://www.youtube.com/embed/Gx7Ww6cI2Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <h4>Free Body Diagrams</h4>
       <img class = "modal-target" src = "pvc/marble_fbd.png" > 
-      <h4>Derivations</h4>
-      <p>Conservation of Energy:</p>
-      <p style="text-align:center"><strong>∑E = U<sub>i</sub> + K<sub>i</sub> = U<sub>f</sub> + K<sub>f</sub></strong></p>
-      <p>Since the marble is not moving initially, Ki = 0, and because uncut shot of the Rube Goldberg has the marble hit the cup in the pendulum at the bottom of the PVC pipe, we are treating that as the y=0 of calculations for this energy transfer. Therefore, at the final time, potential energy is zero:</p>
-      <p style="text-align:center">
-        <strong>
-          U<sub>i</sub> = K<sub>f</sub> <br>
-          mgh = ½ mv<sup>2</sup>
-        </strong>
+
+      <h4>Derivations, LoggerPro Data, and Analysis</h4>
+      <p>
+        Due to the opaque nature of the pipe, we calculated the final kinetic energy of the marble through a linearization of two frames where we see the marble within the frame. This method of finding the final kinetic energy could not discern the exact instantaneous velocity, but with a ∆t equal to ⅓ of a second, the calculated rate of change was as close to instantaneous as we could arrive at.      
       </p>
-      <p>However, there will also be some energy lost due to friction. So:</p>
-      <strong>
-      <p style="text-align:center"><strong>∑E = U<sub>i</sub> + K<sub>i</sub> = U<sub>f</sub> + K<sub>f</sub> + W<sub>non-conserve</strong></sub> </p>
-      </strong>
-      <p>Amended, the equation is:</p>
-      <p style="text-align:center"><strong>U<sub>i</sub> = K<sub>f</sub> + W<sub>non-conserve</sub></strong></p>
-      <p>Here the work is done by friction, which can be calculated by:</p>
-      <strong>
-      <p style="text-align:center">
-        W<sub>friction</sub> = µF<sub>normal</sub> * d
+      <p>
+        We shifted the axis to align with the origin at our first location during frame 1, and then rotated the x axis to simplify calculations. In addition, the vertical distance traveled as traversing the PVC pipe was found through LoggerPro.
       </p>
-      </strong>
-      <p>Calculations for Key Values:</p>
-      <strong>
-      <p style="text-align:center">
-        Weighed mass of marble = 0.00595 kg <br>
-        U<sub>i</sub> = mgh = 0.00595*9.81*0.3147 = 0.0184 J
+
+      <img class = "modal-target" src = "pvc/image1.png" > 
+      
+      <p>
+        Using our knowledge of the conservation of energy, we know the initial energy of the marble is equal to the final energy of the marble. Thus, by taking the bottom of the PVC pipe as h=0, we can say that the initial PE = final KE. However, due to the possible loss of energy from friction, the final energy is final KE + Non Conservational W from friction. Thus, using these formulas in mind, we derived the energy conserved, lost, and the friction coefficient between the marble and the PVC.
       </p>
-      <p style="text-align:center">
-        Approximate velocity = 2.358 meters per second
-        <br> 
-        K<sub>f</sub> = ½mv<sup>2</sup> = ½(2.358<sup>2</sup>)*0.00595 = 0.0165 J
-      </p>
-      </strong>
+
+      <img class = "modal-target" src = "pvc/derivation.jpg" > 
+
       <p>
         As we can see, the initial potential energy and final kinetic energy are quite close in magnitude, demonstrating an expected transfer of energy from potential to kinetic. However, the slight loss is due to friction. As can be seen in the free body diagram, the friction force allowing the marble to rotate is conservational and does not affect the loss of energy. However, because the materials do not offer much traction, slipping is likely to occur. This would be a non conservational force that would explain the loss of energy.
+        <br><br>
+        The angle of the incline can be found using the arcsine function, where the opposite equals the vertical height, 0.3147m, and the hypotenuse is the length of the PVC, 0.7602m. This is shown in the derivations as well.
+        <br><br>
+        Using these calculated values, we did sample calculations for the experimental and expected acceleration values of the marbles. One one side, we used kinematics and the measured final velocity. On the other side, we used newton’s second law and the found friction force to calculate the expected theoretical acceleration. Their similarity demonstrates the accuracy and precision of this energy transfer.
       </p>
-      
 
-      <p style="text-align:center"><strong>Using the equation we found before: U<sub>i</sub> = K<sub>f</sub> + W<sub>non-conserve</sub></strong></p>
-      <strong>
-      <p style="text-align:center">W<sub>friction</sub> = 0.0184 J - 0.0165 J = 0.0019 J</p>
-      </strong>
-      <p style="text-align:center">The angle of the incline can be found using the arcsine function, where the opposite equals the vertical height, 0.3147m, and the hypotenuse is the length of the PVC, 0.7602m. This enables us to calculate the normal force.</p>
-      <strong>
-      <p style="text-align:center">θ = arcsin(0.3147/0.762) = 0.426 radians = 24.39º</p>
-      <p style="text-align:center">F<sub>normal</sub> = mgcos(24.39º) <br>
-         = 0.00595*9.81*cos(24.39º)
-         = 0.0532 N
+      <h4>
+        Sample Calculations
+      </h4>
+
+      <img class = "modal-target" src = "pvc/sample.jpg" > 
+
+      <p>
+        In the end, these results are corroborative in showing the conservation of energy as the marble rolls down the PVC pipe, transforming PE to KE. However, just as in any step, there is always margin for error. For this analysis, other than the non conservational force of friction that can alter the energy loss, the initial release of the marble by hand could have also introduced an initial KE. Moreover, the lack of data points due to the non-transparent nature of the PVC also introduces larger margins of deviation. In the future, using a transparent marble slide as well as implementing a mechanical release system can decrease the energy loss or gain.
       </p>
-      <p style="text-align:center">
-        W<sub>friction</sub> = µF<sub>normal</sub> * d
-      </p>
-      <p style="text-align:center">
-        0.0019 = µ(0.0532 N)*(0.7602) <br>
-        µ = 0.047
-      </p>
-      </strong>
-      <h4>Sample Calculations</h4>
-      <img class = "modal-target" src = "pvc/sample_calc.png" >
-      <h4>LoggerPro Data</h4>
-      <img class = "modal-target" src = "pvc/image1.png" > 
+
+
     </div>
     <div class="card">
         <h2 id = "energy2">Analysis - Energy Transfer #2 (Steps 2 and 3): Pendulum and Play-Doh Stick</h2>
@@ -695,21 +670,77 @@ img:hover {
       <img class = "modal-target" src = "car/image1.png" >
       <img class = "modal-target" src = "car/image3.png" >
 
+      <h4>Analysis</h4>
+      <p>
+        By using the basic principle of conservation of energy, we could both confirm the relationship between change in kinetic energy and work and find a value for the spring constant k. A higher value for k means that more force is required to stretch a spring a certain length – a less stiff spring can be stretched the same length with less force. In this case, the value for k was significantly lower compared to, for instance, springs used in the recent Spring Challenge Lab. This result makes sense, as little effort is required to compress the spring in the car. 
+      </p>
+      <p>
+        Moreover, as shown in the sample calculation, the change in kinetic energy was nearly identical to the work done by the spring. Little energy was likely lost because of heat, friction, and sound, which allowed for the relationship to remain consistent. However, over the course of the car’s translation to the dominoes, we expect that more and more energy was lost due to heat because of friction, so a comparison between the beginning and end of motion could yield slightly different results. 
+      </p>
+
     </div> 
 
     <div class = "card">
       <h2 id = "energy4">
         Analysis - Energy Transfer #4 (Step 6): Mousetrap Activated 
       </h2>
-      <h4>Video of Step</h4>
+      <h4>Video and Description of Step</h4>
       <p>
-
+        In this step, a domino sets off a mouse trap by falling on the triggering mechanism. The domino gains kinetic energy as it falls, losing potential energy. The final impact force of the collision needs to equal or exceed the friction force holding the triggering mechanism in place. This balance took many trials, from changing the weight of the final domino, to the height that it falls from.
       </p>
-      <h4>Derivations</h4>
-      <h4>Free Body Diagrams</h4>
+      <iframe class="vid "src="https://www.youtube.com/embed/mRzGnDFmwP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h4>Free Body Diagrams, Derivations, LoggerPro Data, and Analysis</h4>
       <img class = "modal-target" src = "trap/trap_fbd.png" > 
-      <h4>LoggerPro Data</h4>
-      <h4>Analysis</h4>
+
+      <p>
+        After the domino sets it off, the stored elastic potential energy turns into rotational kinetic energy. At the end of the mouse trap arm’s path, the kinetic energy slams into a water balloon, with enough collision energy to pop it.
+      </p>
+      <p>
+        In this step, we measured the conservation of energy between the mouse trap spring and the ultimate rotational kinetic energy reached.
+      </p>
+      <p>
+        Here is a logger pro that was provided to show a torque vs theta graph of the mouse trap. The integral is thus the work done by the mouse trap spring.
+      </p>
+
+      <img class = "modal-target" src = "trap/logger_pro.png" > 
+
+      <p>
+        Because we know that work is equal to the change in kinetic energy. We can use this formula find an expected angular momentum and compare that with the actual one.
+      </p>
+
+      <img class = "modal-target" src = "trap/image1.jpg" > 
+
+      <p>
+        In order to find the actual angular velocity, we used footage shot at 2000 frames per second by a YouTube channel known as the Slow Mo Guys. Our camera frame rates were too slow but by finding the exact same model online, we could utilize their video in our analysis. This allowed us to curve fit theta and angular velocity. 
+      </p>
+
+      <img class = "modal-target" src = "trap/image4.png" > 
+
+      <p>
+        Upon using the fitted curve, the following function could be used to calculate angular velocity. The angular velocity column was coded in by deriving a new time variable based on the slow motion frame rate. Then, using the following formulas:
+      </p>
+
+      <img class = "modal-target" src = "trap/image2.jpg" >
+      
+      <p>
+        From finding the statistics of this curve, we found that the actual max angular velocity was 284.4 rad/s. This value came extraordinarily close to the expected value of 271.8 rad/s and shows the accurate conversion of spring potential energy to rotational kinetic energy.
+      </p>
+
+      <h4>Sample Calculations</h4>
+
+      <p>
+        Here is a sample calculation of the expected and experimental angular velocity from the change in work, and the angular velocity curve fit.
+      </p>
+
+      <img class = "modal-target" src = "trap/sample_calc.png" >
+
+      <p>
+        The two values of 174.55 and 188.35 differ only by 13.8 rad/s, a relatively low margin of error between the two methods. This further demonstrates the law of conservation of energy is at play for an elastic potential energy transfer into kinetic rotational energy.
+      </p>
+
+      <p>
+        In summary, the domino’s kinetic energy creates a collision force that overcomes the friction force of the mouse trap’s triggering mechanism. This unleashes the stored elastic potential energy of the trap that transforms into rotational kinetic energy. The kinetic energy then creates a collision force that is enough to pop a water balloon, leading into the next step.
+      </p>
     </div> 
 
     <div class="card">
