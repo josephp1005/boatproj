@@ -217,18 +217,18 @@ img:hover {
 <body>
 
 <div class="header">
-  <h2>Rube Goldberg</h2>
+  <h2>Rube Goldberg: Myth of Sisyphus</h2>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-        <h2>FINAL VIDEO</h2>
+        <h2 id = "final_video">FINAL VIDEO</h2>
         <h3>Uncut Length: 24 seconds</h3>
         <iframe class = "vid" width="560" height="315" src="https://www.youtube.com/embed/Y7INo3vuYFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </div>
     <div class="card">
-      <h2>SISYPHUS NEEDS HELP! - THE STORY</h2>
+      <h2 id = "story">SISYPHUS NEEDS HELP! - THE STORY</h2>
       <img class = "imgs" src = "sisyphus_boulder.jpeg" > 
       <p>
         In the bleak pits of Tartarus, Sisyphus’ eternal torment has been just short of impossible. 
@@ -245,7 +245,7 @@ img:hover {
       </p>
     </div>
     <div class="card">
-      <h2>MATERIALS</h2>
+      <h2 id = "materials">MATERIALS</h2>
       <p>
         <ul>
           <li>PVC pipe</li>
@@ -264,11 +264,12 @@ img:hover {
           <li>Spring car</li>
           <li>Cardboard</li>
           <li>Plastic bag</li>
+          <li>Straw</li>
         </ul>
     </p>
     </div>
     <div class="card">
-        <h2>MEASUREMENTS</h2>
+        <h2 id = "measurements">MEASUREMENTS</h2>
         <p>
           <ul>
             <li>Mass of Sisyphus' boulder: 0.057 kg</li>
@@ -277,19 +278,24 @@ img:hover {
             <li>Mass of pendulum cup with Play-Doh: 0.023 kg</li>
             <li>Mass of Play-Doh-covered stick: 0.034 kg</li>
             <li>Length of Play-Doh-covered stick: 0.13 m</li>
+            <li>Length of PVC pipe: 0.762 m</li>
+            <li>Length of mouse trap hammer: 0.05 m</li>
+            <li>Length of Hot Wheels track: 0.33 m</li>
+            <li>Distance from bottom of cup to ground: 0.34 m</li>
+            <li>Mass of final cup with water: 0.164 kg</li>
           </ul>
         </p>
     </div>
     <div class="card">
-        <h2>INITIAL ENGINEERING DESIGN</h2>
+        <h2 id = "init_design">INITIAL ENGINEERING DESIGN</h2>
         <img class = "modal-target" src = "initial_design.png" > 
     </div>
     <div class="card">
-        <h2>FINAL ENGINEERING DESIGN</h2>
+        <h2 id = "final_design">FINAL ENGINEERING DESIGN - CARTOON/SIDEVIEW</h2>
         <img class = "modal-target" src = "new design.png" > 
     </div>
     <div class="card">
-        <h2>ENGINEERING DESCRIPTION</h2>
+        <h2 id = "eng_desc">ENGINEERING DESCRIPTION</h2>
         <h3>Step 1: Marble Down PVC Pipe</h3> 
         <img class = "imgs_working" src = "step pics/1.png" > 
         <p>
@@ -324,7 +330,7 @@ img:hover {
         <img class = "imgs_working" src = "step pics/6.png" >
         <p>
           The final domino falls into a vertical mouse trap. The trap is activated and causes the water balloon to pop. There was plenty of potential energy in the trap initially, which 
-          is converted to kineic energy. The high speed of the trap's hammer is ideal for popping the water balloon. This step is further documnented and anaylzed below. 
+          is converted to kinetic energy. The high speed of the trap's hammer is ideal for popping the water balloon. This step is further documnented and anaylzed below. 
         </p>
         <h3>Step 7: Cup Fills Up</h3>
         <img class = "imgs_working" src = "step pics/7.png" >
@@ -341,14 +347,67 @@ img:hover {
         </p> 
     </div>
     <div class="card">
-        <h2>BUILDING THE MACHINE - FAILURES AND SUCCESSES</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <h2 id = "building">BUILDING THE MACHINE - FAILURES AND SUCCESSES</h2>
+        <p>
+          We completed all of the building and testing at Joseph’s house over the span of two days. 
+          On the first day, we focused on developing our initial design and making the key components of the machine. 
+          We also aimed to record a single step for the assignment we had for class. 
+          The second day involved completing and testing the machine as well as making slight alterations until we had a complete video. 
+          Please continue reading for a more detailed description of the various phases and the challenges and successes. 
+        </p>
+
+        <h3>Phase #1: Building the Pulley</h3>
+        <p>
+          For the first assignment, we decided to choose the pulley as the step we would create and record. 
+          We knew the pulley would likely be the most intricate, so we wanted to make progress on it as soon as possible. 
+          We watched some tutorials on YouTube and concluded that we could use cardboard, a bottle cap, glue, string, and a skewer. 
+          The skewer would go through two circular pieces of cardboard, and a bottle cap would be in the middle and glued to both sides. 
+          The bottle cap allowed for the pulley to have smoother rotation, though it was still non-ideal since it had notable mass and there was friction. 
+          Overall, the friction was minimal, as we later found that the energy lost by the cup attached to the pulley roughly equaled the energy gained by the boulder <strong>(success 1)</strong>. 
+          Therefore, the design of our pulley lent well to the principles of the conservation of energy. 
+        </p>
+        <p>
+          One challenge we faced with the pulley was that the string on the bottle cap sometimes got stuck right next to one of the cardboard circles <strong>(challenge 1)</strong>. 
+          We often forgot to check before each run, so the pulley would unexpectedly move very slowly. 
+          To overcome the obstacle, we taped down stacks of popsicle sticks on both sides of the axel of the pulley. 
+          As a result, the pulley was kept sturdy and the string shifted fewer times. 
+        </p> 
+
+        <h3>Phase #2: Building the Pendulum</h3>
+        <p>
+          Our first workday was dedicated to constructing the pulley. 
+          For the second workday, we began by working on another contraption: a pendulum. 
+          There were a few important constraints for the pendulum. 
+          First, the mass swinging from the pendulum had to have enough surface area to contact the stopper so the spring-loaded car could be released. 
+          Second, the mass needed to initially be attached to the PVC pipe and have a hole to accept the marble. 
+          This constraint meant that the mass could not be too heavy because, otherwise, it would slip when trying to attach it to the PVC pipe. 
+          We decided to use a simple cup because it was light and could easily be attached to the PVC pipe with a small amount of Play-Doh <strong>(success 2)</strong>. 
+        </p>
+        <p>
+          While we eventually began to use Play-Doh, we initially used a cup by itself, which presented a few problems. 
+          First, the cup was not heavy enough alone to knock over the stopper <strong>(challenge 2)</strong>. 
+          Also, it was difficult to attach the cup to the PVC pipe without using a strong tape that would prevent motion <strong>(challenge 3)</strong>. 
+          Play-Doh served as the solution to both the problems. 
+          We put a small amount of Play-Doh in the cup to increase its mass. 
+          Knowing that a Play-Doh surface would have high friction, we then put Play-Doh between the top of the cup and the PVC pipe to consistently catch the marble without the cup slipping too early. 
+          The speed of the marble was still sufficient to separate the cup from the PVC pipe and begin the pendulum motion. 
+        </p>
+
+        <h3>Phase #3: Creating the Car Stopper </h3>
+        <p>
+          Along with the cup, the stopper for the spring-loaded car also had important mass constraints. 
+          It needed to be light enough to be knocked over while also having a coefficient of friction high enough to prevent movement of the car. 
+          At first, we tried to use a small circular plastic container. 
+          While it stopped the motion of the car, its structure made it difficult for the cup attached to the pendulum to knock it over <strong>(challenge 4)</strong>. 
+        </p>
+        <p>
+          We knew that Play-Doh has a high coefficient of friction, so we thought that it could be used for this problem as well. 
+          We inserted a popsicle stick into a ball of Play-Doh, which was both light and able to prevent the car’s motion. 
+          This approach was effective, and we kept it for the final product <strong>(success 3)</strong>.  
+        </p>
     </div>
     <div class="card">
-        <h2>PHOTOS OF WORKING</h2>
+        <h2 id = "photos">PHOTOS OF WORKING</h2>
         <img class = "imgs_working" src = "IMG_0086.JPG" > 
         <br>
         <img class = "imgs_working" src = "IMG_0096.JPG" > 
@@ -356,13 +415,7 @@ img:hover {
         <img class = "imgs_working" src = "IMG_1658.JPG" > 
     </div>
     <div class="card">
-        <h2>ANALYSIS OF ENERGY TRANSFERS</h2>
-        <h3>Energy Transfer #1: Marble Down PVC Pipe</h3>
-        <h4>Video and Description of Step</h4>
-        <h4>Derivations</h4>
-        <h4>LoggerPro Data</h4>
-        <h4>Analysis</h4>
-        <h3>Energy Transfer #2 (Steps 2 and 3): Pendulum and Play-Doh Stick</h3>
+        <h2 id = "energy1">Analysis - Energy Transfer #1 (Steps 2 and 3): Pendulum and Play-Doh Stick</h2>
         <h4>Video and Description of Step</h4>
         <p>
           A marble rolls down a PVC pipe and lands in a cup, which then swings downward in the motion of a pendulum to hit a Play-Doh-covered popsicle stick. This collision causes the spring-powered car to be released. 
@@ -448,39 +501,63 @@ img:hover {
           Overall, this energy transfer reflects the fundamental concepts of conservation of energy, simple harmonic motion, and rotational motion. Of course, our calculations had 
           some innacuracy due to factors not fully in our control. Most importantly, though, Sisyphus was one step closer to freedom! 
         </p>
-        <h3>Energy Transfer #3: Spring Car Released</h3>
-        <h4>Video of Step</h4>
-        <h4>Derivations</h4>
-        <h4>LoggerPro Data</h4>
-        <h4>Analysis</h4>
-        <h3>Energy Transfer #4: Mouse Trap Activated</h3>
-        <h4>Video of Step</h4>
-        <h4>Derivations</h4>
-        <h4>LoggerPro Data</h4>
-        <h4>Analysis</h4>
-        <h3>Energy Transfer #5 (Steps 7 and 8): Pulley System</h3>
-        <h4>Video of Step</h4>
-        <iframe width="560" height="315" class="vid" src="https://www.youtube.com/embed/WRvnsTVnNcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h4>Derivations, LoggerPro Data, and Analysis</h4>
-        <img class = "modal-target" src = "pulley/image1.jpg" >
-        <p>
-          The final push! In this final energy transfer, Sisyphus’ boulder finally makes it up the mountain. After the pop of the water balloon, the cup begins to fill with water. As the force of gravity overcomes the tension force in the string, it begins to fall. The string is attached via a non-ideal pulley to the boulder, which is allowed to roll up the hot wheel track mountain.
-          As the cup falls, it gains mass but also loses height. This should create a quadratic curve for the PE of the cup. In addition, it also gains kinetic energy as gravity accelerates it down. However, this problem becomes involved when we take the boulder into account. Some of the energy of the cup falling is transferred via tension to the boulder, which gains PE, KE translational, and KE rotational. This is modeled below via the logger pro data collected above:
-        </p>
-        <img class = "modal-target" src = "pulley/image2.jpg" >
-        <p>
-          As can be seen in the graph, the Cup’s total energy decreases from initial to final while the energy of the boulder increases from initial to final. This is because the act of pulling up the boulder decreases the final velocity of the cup, thus decreasing its total final energy. 
-          In return, the boulder will increase in energy as the work from tension is acting upon it. Here are the derivations:
-        </p>
-        <img class = "data" src = "pulley/image3.jpg" >
-        <p>
-          As you can see from these derivations, the energy lost from the cup closely resembles the energy gained from the boulder, with a difference of 0.002J. 
-          This suggests that very little energy is lost across the entire system, as the play doh boulder allows it to roll up the ramp without slipping while also not providing any non-conservational work. 
-        </p>
-        <h4>Sample Calculations</h4>
-        <img class = "data" src = "pulley/image5.jpg" >
-        <h4>Sample Calculation LoggerPro Verification</h4>
-        <img class = "modal-target" src = "pulley/image4.jpg" >
+    </div>
+    <div class = "card">
+      <h2 id = "energy2">
+        Analysis - Energy Transfer #2 (Step 4): Spring Car Released
+      </h2>
+      <h4>Video of Step</h4>
+      <h4>Derivations</h4>
+      <h4>LoggerPro Data</h4>
+      <h4>Analysis</h4>
+      <h3>Energy Transfer #3: Mouse Trap Activated</h3>
+      <h4>Video of Step</h4>
+      <h4>Derivations</h4>
+      <h4>LoggerPro Data</h4>
+      <h4>Analysis</h4>
+
+    </div> 
+
+    <div class = "card">
+      <h2 id = "energy3">
+        Analysis - Energy Transfer #3 (Step 6): Mousetrap Activated 
+      </h2>
+      <h4>Video of Step</h4>
+      <h4>Derivations</h4>
+      <h4>LoggerPro Data</h4>
+      <h4>Analysis</h4>
+      <h3>Energy Transfer #3: Mouse Trap Activated</h3>
+      <h4>Video of Step</h4>
+      <h4>Derivations</h4>
+      <h4>LoggerPro Data</h4>
+      <h4>Analysis</h4>
+
+    </div> 
+
+    <div class="card">
+      <h2 id = "energy4">Analysis - Energy Transfer #4 (Steps 7 and 8): Pulley System</h2>
+      <h4>Video of Step</h4>
+      <iframe width="560" height="315" class="vid" src="https://www.youtube.com/embed/WRvnsTVnNcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h4>Derivations, LoggerPro Data, and Analysis</h4>
+      <img class = "modal-target" src = "pulley/image1.jpg" >
+      <p>
+        The final push! In this final energy transfer, Sisyphus’ boulder finally makes it up the mountain. After the pop of the water balloon, the cup begins to fill with water. As the force of gravity overcomes the tension force in the string, it begins to fall. The string is attached via a non-ideal pulley to the boulder, which is allowed to roll up the hot wheel track mountain.
+        As the cup falls, it gains mass but also loses height. This should create a quadratic curve for the PE of the cup. In addition, it also gains kinetic energy as gravity accelerates it down. However, this problem becomes involved when we take the boulder into account. Some of the energy of the cup falling is transferred via tension to the boulder, which gains PE, KE translational, and KE rotational. This is modeled below via the logger pro data collected above:
+      </p>
+      <img class = "modal-target" src = "pulley/image2.jpg" >
+      <p>
+        As can be seen in the graph, the Cup’s total energy decreases from initial to final while the energy of the boulder increases from initial to final. This is because the act of pulling up the boulder decreases the final velocity of the cup, thus decreasing its total final energy. 
+        In return, the boulder will increase in energy as the work from tension is acting upon it. Here are the derivations:
+      </p>
+      <img class = "data" src = "pulley/image3.jpg" >
+      <p>
+        As you can see from these derivations, the energy lost from the cup closely resembles the energy gained from the boulder, with a difference of 0.002J. 
+        This suggests that very little energy is lost across the entire system, as the play doh boulder allows it to roll up the ramp without slipping while also not providing any non-conservational work. 
+      </p>
+      <h4>Sample Calculations</h4>
+      <img class = "data" src = "pulley/image5.jpg" >
+      <h4>Sample Calculation LoggerPro Verification</h4>
+      <img class = "modal-target" src = "pulley/image4.jpg" >
     </div>
     <div class="card">
         <h2>CONCLUSION</h2>
@@ -496,14 +573,46 @@ img:hover {
       <p>Casey Chen, Sonny Lowe, and Joseph Thomas</p>
     </div>
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <h2>Table of Contents</h2>
+      <p>
+        <a href="#final_video">Final Video</a>
+      </p>
+      <p>
+        <a href="#story">The Story</a>
+      </p>
+      <p>
+        <a href="#materials">Materials</a>
+      </p>
+      <p>
+        <a href="#measurements">Measurements</a>
+      </p>
+      <p>
+        <a href="#init_design">Initial Engineering Design</a>
+      </p>
+      <p>
+        <a href="#final_design">Final Engineering Design</a>
+      </p>
+      <p>
+        <a href="#eng_desc">Engineering Description</a>
+      </p>
+      <p>
+        <a href="#building">Building the Machine</a>
+      </p>
+      <p>
+        <a href="#photos">Photos of Working</a>
+      </p>
+      <p>
+        <a href="#energy1">Energy Transfer #1</a>
+      </p>
+      <p>
+        <a href="#energy2">Energy Transfer #2</a>
+      </p>
+      <p>
+        <a href="#energy3">Energy Transfer #3</a>
+      </p>
+      <p>
+        <a href="#energy4">Energy Transfer #4</a>
+      </p>
     </div>
   </div>
   <div id="modal" class="modal">
