@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <style>
 * {
   box-sizing: border-box;
@@ -10,15 +11,15 @@
 /* Add a gray background color with some padding */
 body {
   position: relative;
-  font-family: Arial;
+  font-family: "Lato", sans-serif;
   margin: 0px;
   padding: 20px;
   padding-left: 12vw;
   padding-right: 12vw;
-  background-image: url("greekbg5.jpg");
+  /* background-image: url("greekbg5.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color:  rgb(255, 215, 196); */
+  background-color:  rgb(252,187,59);
 }
 
 /* Header/Blog Title */
@@ -26,7 +27,16 @@ body {
   padding: 30px;
   font-size: 30px;
   text-align: center;
+  color: white;
   /* background: white; */
+}
+
+.header span{
+  font-size: 20px;
+}
+
+.header span:last-of-type{
+  font-size: 15px;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -230,10 +240,17 @@ img:hover {
   #right-pillar{
     display: none;
   }
+
+  #bannerImage{
+    height: 30px;
+    width: auto !important;
+    overflow: hidden;
+  }
 }
 
 #pillar{
-  position: fixed;
+  opacity: 80%;
+  position: absolute;
   width: 100vw;
   top:0;
   left:0;
@@ -253,6 +270,14 @@ img:hover {
   width:auto;
 }
 
+#bannerImage {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  z-index: -2 !important;
+}
+
 </style>
 </head>
 <body>
@@ -260,10 +285,11 @@ img:hover {
 <div id="pillar">
   <img id="left-pillar" src="Pillars.png">
   <img id="right-pillar" src="Pillars.png">
+  <img id="bannerImage" src="bannerImage.jpg">
 </div>
 
 <div class="header">
-  <h2 id = "top">Rube Goldberg 2022: Myth of Sisyphus</h2>
+  <h2 id = "top"><span>Rube Goldberg 2022:</span><br>MYTH OF SISYPHUS<br><span>Joseph Thomas, Sonny Lowe, and Casey Chen</span></h2>
 </div>
 
 <div class="row">
@@ -271,7 +297,7 @@ img:hover {
     <div class="card">
       <!-- <h2 id = "welcome">Welcome!</h2> -->
       <p>Welcome to our Rube Goldberg website! Join Sisyphus as we explore the toils and struggles he and his physics saviors encountered throughout this journey.</p>
-      <p>Click on images to enlarge them, watch the embedded videos, and use our table of contents for easy navigation!</p>
+      <p>Click on images to enlarge, watch embedded videos, and use our table of contents for navigation! Use a landscape screen for the best experience!</p>
   </div>
     <div class="card">
         <h2 id = "final_video">FINAL VIDEO</h2>
@@ -834,8 +860,10 @@ img:hover {
   </div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>Authors</h2>
-      <p>Joseph Thomas, Sonny Lowe, and Casey Chen</p>
+      <h2>Did you know...</h2>
+      <p>
+        This website was coded from scratch in HTML, CSS, and JavaScript!
+      </p>
     </div>
     <div class="card">
       <h2>Table of Contents</h2>
@@ -886,12 +914,6 @@ img:hover {
       </p>
       <p>
         <a href="#concl">Conclusion</a>
-      </p>
-    </div>
-    <div class="card">
-      <h2>Did you know...</h2>
-      <p>
-        This website was coded from scratch in HTML, CSS, and JavaScript!
       </p>
     </div>
   </div>
