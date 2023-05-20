@@ -271,11 +271,20 @@ img:hover {
   width:auto;
 }
 
+/*
 #bannerImage {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  width: 100vw;
+  width: 50vw;
+  z-index: -2 !important;
+  overflow: hidden;
+}*/
+
+#bannerImage {
+  position: absolute;
+  height:10vh;
+  width: 150%;
   z-index: -2 !important;
   overflow: hidden;
 }
@@ -285,9 +294,9 @@ img:hover {
 <body>
 
 <div id="pillar">
-  <img id="left-pillar" src="Pillars.png">
-  <img id="right-pillar" src="Pillars.png">
-  <img id="bannerImage" src="bannerImage.jpg">
+  <img id="left-pillar" src="water_pillar.png">
+  <img id="right-pillar" src="water_pillar2.png">
+  <img id = "bannerImage" src ="water_pillar3.png">
 </div>
 
 <div class="header">
@@ -339,6 +348,7 @@ img:hover {
       </p>
       <h3>Design #2: Lightweight "Flappy Bird"</h3>
       <h4>Sketch</h4>
+      <img class = "modal-target" src = "flappy_sketch.png" >
       <h4>Materials</h4>
       <ul>
         <li>Styrofoam</li>
@@ -404,20 +414,25 @@ img:hover {
          we added many new components to attempt to solve this issue. First, we created a wooden base (made out of balsa wood) to attach to the bottom of the styrofoam.
          We thought that this would smoothen the interaction between the boat and the water which would hopefully minimize rotation. Below is a picture of us cutting out
          the wooden base.</p>
-      <img class = "modal-target" src = "verniergraph.png" > <!--wood.jpg-->
+      <img class = "modal-target" src = "wood.png" > <!--wood.jpg-->
       <p>The next part of the engineering process was pretty simplistic. We mainly had to rewire the circuit (see picture below) and tape the battery, motor, switch,
         and propeller to the boat in such a way that we would even out the boat's center of mass. This was the same procedure we executed for our first prototype, so
         we were pretty familiar with this step.</p>
-      <img class = "modal-target" src = "verniergraph.png" > <!--wire.jpg-->
+      <img class = "modal-target" src = "wire.png" > <!--wire.jpg-->
       <p>We had the ideas to attach straws to the bottom of our boat to help it balance. Once we added them, we started testing. Since we were at Joseph's house, we 
          filled up a bucket with water to test it. As you can see in the following video, the boat was still rotating, despite our best efforts.</p>
-      <iframe class = "vid" src="https://www.youtube.com/embed/3w2lpoah73s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class = "vid" width="383" height="681" src="https://www.youtube.com/embed/IPv9zp3ONCc" title="Boat Test 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p>Desparate to fix the rotation issue and improve upon our original time, we realized that changing the shape of the boat's body from a v-shape to a rectangular
          shape would minimize rotation because we would be able to cut it more symetrically. This would stop the boat from rotating to one side as often. After testing
          the boat again with this new design, we were proud to see that our boat was moving in a straight line.</p>
-      <iframe class = "vid" src="https://www.youtube.com/embed/3w2lpoah73s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class = "vid" width="383" height="681" src="https://www.youtube.com/embed/Q6qQQweBf5w" title="Boat Test 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p>Finally, we had completed our final prototype. In class, we worked on adding smaller editions to our boat to incrementally decrease our timing, such as putting
          a sail on the boat. None of these additions improved our time, so we remained with the final prototype that is pictured below.</p>
+      <p>
+        As a note, during 1st period on the bracket race day, we decided to apply some vasline to the bottom of the boat, which ended up reducing our time to 
+        27.2 seconds and helped us defeat our first opponents. The vasline was effective because it acted as a lubricant, reducing the friction between the boat and the water.
+        In other words, the vaseline created a thin layer below the boat that helped to reduce the resistance and drag, minimizing the rotational forces.
+      </p>
     </div>
     <div class="card">
       <h2 id = "results">RESULTS - SUCCESSES AND FAILURES</h2>
@@ -541,9 +556,9 @@ img:hover {
     <div class="card">
       <h2 id = "contributions">CONTRIBUTIONS</h2>
       <ul>
-        <li>Shiven: Engineering boat, Prototype information, Physics analysis and calculations</li>
-        <li>Joseph: Engineering boat, Protoype information, Results</li>
-        <li>Jeremy: Engineering boat, Conclusion, Moral Support</li>
+        <li>Shiven: Engineering boat, prototype stages, physics analysis and calculations, engineering process</li>
+        <li>Joseph: Engineering boat, prototype stages, results</li>
+        <li>Jeremy: Engineering boat, engineering process, conclusion</li>
       </ul>
     </div>
   </div>
